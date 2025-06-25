@@ -1,5 +1,5 @@
 /***********************************************************************************
- *  File         : main.cpp
+ *  File         : qpsk.cpp
  *  Project      : Comunicação Digital para Sistemas Embarcados
  *  Description  : [Breve descrição do que este arquivo faz, ex: simula constelação QPSK]
  *
@@ -19,33 +19,23 @@
  *
  ***********************************************************************************/
 
-
+#include "qpsk.hpp"
 #include <iostream>
-#include "qpsk.hpp"  // você define funções aqui
+#include <vector>
+#include <complex>
+#include <random>
+#include <fstream>
+#include <cmath>
 
 using namespace std;
 
-int main() {
-    int opcao;
-    cout << "=== Comunicação Digital ===\n";
-    cout << "1. Simular constelação QPSK\n";
-    cout << "2. Calcular BER QPSK\n";
-    cout << "3. Sair\n";
-    cout << "Escolha: ";
-    cin >> opcao;
-
-    switch (opcao) {
-        case 1:
-            qpsk_constellation();
-            break;
-        case 2:
-            qpsk_ber_simulation();
-            break;
-        default:
-            cout << "Saindo...\n";
-    }
-
-    return 0;
+void qpsk_constellation() {
+    // código de geração e exportação da constelação (como já te mandei)
 }
+
+void qpsk_ber_simulation() {
+    // código de BER (como o qpsk_demod_ber.cpp, mas transformado em função)
+}
+
 
 
